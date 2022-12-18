@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*include the padding and border in an element total width and height*/
+    
+}
+
+body{
+    min-height: 100vh; /*minimum height of an element 100vh means the element should occupy the web browser veawport height*/
+    background: #efeff2;
+    display: flex;
+    justify-content: center;/*center all the elements in body*/
+    align-items: center;
+}
+
+/*add styles to elements in calculater class*/
+.calculator{
+    width: 300px;
+    height: 500px;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0,0.3 );
+    border-radius: 12px;/*radious of the element corners*/
+    background-color: darkslategrey;
+    overflow: hidden;
+}
+
+form input{
+    width: 100%;
+    height: 150px;
+    background-color: black;
+    border-radius: 12px;
+    border: none;
+    font-size: 2rem;
+    padding: 1rem;
+    color: white;
+    text-align: right;
+    pointer-events: none;/*set as cannot clicking*/
+}
+
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+button{
+  flex: 0 0 22%;
+  margin: 5px 0;
+  border: 1px solid black;
+  width: 60px;
+  height: 52px;
+  font-size: 22px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-purple{
+    background-color: plum;
+    color: white;
+}
+
+.btn-numbers{
+    background-color:gray;
+    color: white;
+}
+
+.btn-equal{
+    background-color: green;
+    color: white;
+}
+
+.btn-clear{
+    background-color: red;
+    color: white;
+}
